@@ -1,5 +1,5 @@
 - name: ping demo
-  hosts: localhost #targets anisible server itself as it can manage ansible
+  hosts: local #targets anisible server itself as it can manage ansible
   connection: local # It will nont expect credentials
   tasks:
   - name: ping localhost

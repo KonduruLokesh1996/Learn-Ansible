@@ -16,7 +16,7 @@
   tasks:
   - name: PLAY2 and Task1
     debug:
-      msg: "Hello from PLAY1 Task1"
+      msg: "Hello from PLAY2 Task1"
 
   - name: PLAY2 and Task2
     debug:

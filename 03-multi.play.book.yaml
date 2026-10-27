@@ -1,7 +1,7 @@
--name: PLAY1
- hosts: local
- connection: local
- tasks:
+- name: PLAY1
+  hosts: local
+  connection: local
+  tasks:
   - name:PLAY1 and Task1
     debug:
       msg: "Hello from PLAY1 Task1"
@@ -10,10 +10,10 @@
     debug:
       msg: "Hello from PLAY1 Task2"   
 
--name: PLAY2
- hosts: local
- connection: local
- tasks:
+- name: PLAY2
+  hosts: local
+  connection: local
+  tasks:
   - name:PLAY2 and Task1
     debug:
       msg: "Hello from PLAY1 Task1"

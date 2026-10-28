@@ -11,6 +11,6 @@
 
   - name: print the vars again
     var: 
-    property: "10000acers"
+      property: "10000acers"
     debug: 
       msg: "Hi, I got {{ property }} "     ##it is a task level and also execution on priority basis

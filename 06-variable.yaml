@@ -1,0 +1,16 @@
+- name: demo on task level variables
+  hosts: local
+  connection: local
+  vars:                                      ## these are like parents giving inheritence
+    property: "100acers"
+                                     
+  tasks:
+  - name: print the vars
+    debug: 
+      msg: "Hi, I got {{ property }} " 
+
+  - name: print the vars
+    var: 
+    property: "10000acers"
+    debug: 
+      msg: "Hi, I got {{ property }} "     ##it is a task level and also execution on priority basis

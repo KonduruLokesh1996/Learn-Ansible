@@ -6,4 +6,4 @@
   tasks:                                    ## here course.yaml will take all the info from 06-variable.yaml
   - name: print course information 
     debug:
-      msg:"hi, I am learning {{ course }} from {{ trainer }}, duration is {{ duration }}" 
+      msg: "Hi, I am learning {{ course }} from {{ trainer }}, duration is {{ duration }}" 

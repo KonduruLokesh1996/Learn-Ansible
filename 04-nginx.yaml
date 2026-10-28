@@ -10,5 +10,5 @@
   - name: install nginx
     service:
       name: nginx
-      state: start
+      state: started
       enable: yes    

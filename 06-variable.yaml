@@ -9,7 +9,7 @@
     debug: 
       msg: "Hi, I got {{ property }} " 
 
-  - name: print the vars
+  - name: print the vars again
     var: 
     property: "10000acers"
     debug: 

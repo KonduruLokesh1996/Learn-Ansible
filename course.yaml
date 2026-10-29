@@ -1,3 +1,3 @@
-course: ansible    ##in 6 file if we have some 100s of data we cant put there so keeping it here
+course: ansible from file   ##in 6 file if we have some 100s of data we cant put there so keeping it here
 trainer: Sivakumarmar
 duration: 10hr  

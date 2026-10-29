@@ -14,7 +14,7 @@
     vars:
       course: "ansible from task"
     debug:
-      msg: "Hi, I am learning {{ course }} from {{ trainer }}, duration is {{ duration }}" 
+      msg: "Hi, I am learning {{ course }} " 
       
 
       ##here in all places we have taken course so now from where will it take value it is called preferance

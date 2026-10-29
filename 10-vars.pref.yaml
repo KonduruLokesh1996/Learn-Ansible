@@ -1,0 +1,20 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars:
+    course: "ansible from PLAY"
+  vars_prompt:
+  - name: course
+    prompt: please enter your course
+    private: false
+  vars_files:
+  - course_yaml  
+  tasks:                                    
+  - name: print course information 
+    vars:
+      course: "ansible from task"
+    debug:
+      msg: "Hi, I am learning {{ course }} from {{ trainer }}, duration is {{ duration }}" 
+      
+
+      ##here in all places we have taken course so now from where will it take value it is called preferance

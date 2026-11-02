@@ -8,7 +8,7 @@
       state: present
       name: nginx
     when: ansible_fatcs.osfamily == "RedHat" 
- - name: install nginx in "debian"
+  - name: install nginx in "debian"
     opt:
       state: present
       name: nginx

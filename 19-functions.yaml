@@ -6,9 +6,9 @@
     - Sivakumar
     - Reddy
     - M 
-    topic: ansible
+    topic: ANSIBLE
   tasks:
-  - name: convert string to list
+  - name: convert list to string
     debug:
       msg: "full name, {{ name | names | join(' ')}}"
 

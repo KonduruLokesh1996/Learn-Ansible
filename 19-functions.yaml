@@ -2,12 +2,16 @@
   hosts: local
   connections: local
   vars:
-    topics: "Linux, shell, Ansible, Terraform, Docker"
+    names:
+    - Sivakumar
+    - Reddy
+    - M 
+    topic: ansible
   tasks:
-  - name: print the name
-    debug:
-      msg: "Hi, {{ person_name | default ('kishan') }}"
-
   - name: convert string to list
     debug:
-      msg: "Topics are: {{ topics | split(',') }}"  
+      msg: "full name, {{ name | names | join(' ')}}"
+
+  - name: convert to lower case
+    debug:
+      msg: "Topics are: {{ topics | lower  }}"  

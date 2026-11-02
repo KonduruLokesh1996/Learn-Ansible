@@ -7,12 +7,12 @@
     dnf:
       state: present
       name: nginx
-    when: ansible_fatcs.osfamily == "RedHat" 
+    when: ansible_facts.osfamily == "RedHat" 
   - name: install nginx in "debian"
     opt:
       state: present
       name: nginx
-    when: ansible_fatcs.osfamily == "Debian" 
+    when: ansible_facts.osfamily == "Debian" 
 
 
 

@@ -1,8 +1,8 @@
-- name: print facts
-  hosts: localhost
-  connection: local
-  gather_facts: yes
-  tasks:
-    - name: display host facts
-      ansible.builtin.debug:
-        msg: "The hostname is {{ ansible_hostname }}"
+-name: print facts
+ hosts: local
+ connections: local
+ gather_facts: yes
+ tasks
+ - name: print the facts
+   debug:
+     msg: "{{ ansible_facts }}"

@@ -10,8 +10,8 @@
     - { name: 'net-tools', state: 'present' }
     - { name: 'htop', state: 'present' }
   tasks:
-  - name: instal packages
+  - name: install packages
     package: 
       name: "{{ item.name }}"
-      state: "{{item.state}}"
+      state: "{{ item.state }}"
     loop: "{{ packages }}"    

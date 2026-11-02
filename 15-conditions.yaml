@@ -1,15 +1,15 @@
-- name: print OS RedHat or not
+- name: print OS is RedHat or not
   hosts: local
   connection: local
   become: yes
   tasks:
-  - name: install nginx in "RedHat"
+  - name: install nginx in RedHat
     dnf:
       state: present
       name: nginx
     when: ansible_fatcs.osfamily == "RedHat" 
  - name: install nginx in "debian"
-    dnf:
+    opt:
       state: present
       name: nginx
     when: ansible_fatcs.osfamily == "Debian" 

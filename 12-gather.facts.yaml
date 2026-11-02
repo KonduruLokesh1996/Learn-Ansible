@@ -12,4 +12,4 @@
      msg:
        OS Family: {{ansible_facts['os_family'] }}
        private_ip: {{ ansible_facts.default_ipv4.address }}
-       private_ip: {{ ansible_facts['default_ipv4']['address'] }}
+       private_ip: {{ ansible_facts['default_ipv4']['address'] }}             ##ansible config recheck once session 24 time till 25min

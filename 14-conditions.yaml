@@ -1,20 +1,10 @@
-- name: even or odd
-  hosts: local
+- name: Check condition examples
+  hosts: localhost
   connection: local
   vars:
-    given_number: 10
+    my_number: 3
   tasks:
-  - name: is even
-    ansible.builtin.debug:
-      msg: "Given number: {{ given _number }} is even"
-    when: given_number % 2 == 0
-- name: is odd
-     ansible.builtin.debug:
-      msg: "Given number: {{ given _number }} is odd"
-    when: given_number % 2 != 0
-
-
-
-
-
-
+    - name: is odd
+      ansible.builtin.debug:
+        msg: "The number is odd"
+      when: my_number | int % 2 != 0

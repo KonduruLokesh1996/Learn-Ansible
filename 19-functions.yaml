@@ -6,7 +6,7 @@
   tasks:
   - name: print the name
     debug:
-    msg: "Hi, {{ person_name | default ('kishan') }}"
+      msg: "Hi, {{ person_name | default ('kishan') }}"
 
   - name: convert string to list
     debug:
